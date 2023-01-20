@@ -51,7 +51,9 @@ Provides auto configuration and binding to Spring environment.
     spring.cloud.consul.config.prefix=pancho
     ```
     ** spring.config.import's value optional:consul: will lookup localhost:8500 which is default consul host/port in local
+    
     ** spring.application.name is going to be the service name in consul and also the path it tries to find the key/value under spring.cloud.consul.config.prefix.
+
     ** If spring.cloud.consul.config.prefix is not set, it will look up “/config” by default
 
 
@@ -61,11 +63,11 @@ Binding the value to the key in either application.properties or source code wit
 
 
 
-Todo
 
-test service discovery
-test ACL
+# Todo
 
+- test service discovery
+- test ACL
 
 
 
