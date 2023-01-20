@@ -1,7 +1,7 @@
-#Sandbox for Heejeong
+# Sandbox for Heejeong
 
-1. Spring Cloud : [Spring Cloud](./notes/Spring_Cloud_Consul.md)
+## 1. Spring Cloud : [Spring Cloud](./notes/Spring_Cloud_Consul.md)
 
-2. Cucumber
+## 2. Cucumber
 
-3. git submodule 
+## 3. git submodule 
