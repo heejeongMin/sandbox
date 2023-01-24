@@ -54,7 +54,7 @@ Provides auto configuration and binding to Spring environment.
     
     ** spring.application.name is going to be the service name in consul and also the path it tries to find the key/value under spring.cloud.consul.config.prefix.
 
-    ** If spring.cloud.consul.config.prefix is not set, it will look up “/config” by default
+    ** If spring.cloud.consul.config.prefix is not set, it will look up “/config/{application_name}/” by default
 
 
 ## Usage within Project

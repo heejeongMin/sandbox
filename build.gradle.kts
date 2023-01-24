@@ -33,9 +33,14 @@ dependencies {
 	testImplementation("io.cucumber:cucumber-jvm:7.11.0")
 	testImplementation("io.cucumber:cucumber-java:7.11.0")
 	testImplementation("io.cucumber:cucumber-junit-platform-engine:7.11.0")
-	testImplementation("io.cucumber:cucumber-spring:7.11.0")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.junit.platform:junit-platform-suite")
+
+	testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
+	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
+
+//	testImplementation("io.cucumber:cucumber-spring:7.11.0")
+
+	testImplementation("org.springframework.boot:spring-boot-starter-test")
 
 	//kotlin
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
@@ -63,7 +68,7 @@ tasks.withType<KotlinCompile> {
 	}
 }
 
-//tasks.withType<Test> {
-//	useJUnitPlatform()
-//	systemProperty("cucumber.junit-platform.naming-strategy", "long")
-//}
+tasks.withType<Test> {
+	useJUnitPlatform()
+	systemProperty("cucumber.junit-platform.naming-strategy", "long")
+}
