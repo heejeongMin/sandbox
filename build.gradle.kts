@@ -46,18 +46,24 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	implementation("io.github.microutils:kotlin-logging-jvm:2.0.11")
+	testImplementation("ch.qos.logback:logback-classic:1.4.5")
 //	testImplementation("javax.inject:javax.inject:1")
 
 	//spring
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
-
+	implementation("org.springframework:spring-aop")
+	implementation("org.springframework:spring-aspects")
 
 	//consul
 //	implementation("org.springframework.cloud:spring-cloud-starter-consul-all")
 	implementation("org.springframework.cloud:spring-cloud-starter-consul-config")
 //	implementation("org.springframework.cloud:spring-cloud-starter-sleuth")
 //	implementation("org.springframework.cloud:spring-cloud-starter-consul-discovery")
+
+	//prometheus
+	implementation("io.micrometer:micrometer-registry-prometheus:1.10.3")
 
 }
 
